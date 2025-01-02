@@ -33,3 +33,4 @@ flutter:
     - family: halter
       fonts:
         - asset: font/halter.ttf
+
