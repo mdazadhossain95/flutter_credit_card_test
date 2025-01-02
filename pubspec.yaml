@@ -12,25 +12,21 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  plugin_platform_interface: ^2.1.6
   flutter_web_plugins:
     sdk: flutter
+  web: ^0.5.1
+  plugin_platform_interface: ^2.0.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.3
+  flutter_lints: ^5.0.0
 
 flutter:
   plugin:
-    platforms:
-      android:
-        package: com.simform.flutter_credit_card
-        pluginClass: FlutterCreditCardPlugin
-      ios:
-        pluginClass: FlutterCreditCardPlugin
-      web:
-        pluginClass: FlutterCreditCardWeb
-        fileName: src/plugin/flutter_credit_card_web.dart
+    androidPackage: com.simform.flutter_credit_card  # This should match the package name
+    mainClass: com.simform.flutter_credit_card.FlutterCreditCardPlugin  # This should match the plugin class location
+
   assets:
     - icons/
   fonts:
